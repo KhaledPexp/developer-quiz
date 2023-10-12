@@ -1,0 +1,7 @@
+.active{
+    color: rgb(231, 9, 9);
+    font-weight: bolder;
+}
+.link:hover{
+    color: rgb(231, 9, 9);
+}
