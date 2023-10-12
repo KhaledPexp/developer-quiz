@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const SingleQuiz = ({q, no, }) => {
+const SingleQuiz = ({q, no, correctAnsCheck}) => {
     const options = q.options;
     const [ansOption, setOption] = useState(false);
 
@@ -17,25 +17,7 @@ const SingleQuiz = ({q, no, }) => {
         console.log(ansOption);
     }
 
-    const correctAnsCheck = (correctAns, qCorrectAns) => {
-            
-        if(correctAns === qCorrectAns){
-           
-            toast.success('Your Answer is Correct!', {
-                position: "top-center",
-                autoClose: 5000,
-                
-                });       
-               
-        }
-        else{
-            toast.error('Your Answer was incorrect!', {
-                position: "top-center",
-                autoClose: 5000,
-                }); 
-        }
-       
-    }
+    
 
 
     return (
@@ -74,7 +56,7 @@ const SingleQuiz = ({q, no, }) => {
                             return  (
                                 <div  key = {idx} className='border rounded w-3/4 border-gray-500 py-4 hover:bg-green-300  pl-5 flex justify-start'>
                                     <label  className='cursor-pointer'> 
-                                    <input onClick={()=> {correctAnsCheck (option, q.correctAnswer)}} type="radio" name="quiz" id="" />  {option}
+                                    <input onClick={()=> {correctAnsCheck (option, q.correctAnswer)}} type="radio" name="sQuiz" value={option} id="" />  {option}
                                     
                                     </label>
                                     
