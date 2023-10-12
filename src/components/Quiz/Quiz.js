@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Quiz = ({image, name, total,id }) => {
     console.log(id);
     return (
-        <div>
+        <div className='max-md:mb-5 mx-auto'>
             <div className='w-72 h-auto border border-amber-300 rounded'>
                 <div>
                 <img className='w-80 bg-amber-300 rounded-b' src= {image} alt="" />

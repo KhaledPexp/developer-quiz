@@ -9,9 +9,9 @@ const Quizstat = () => {
     
 
     return (
-        <div className='flex justify-center w-full h-auto mx-auto my-40'>
+        <div className='flex justify-center w-full h-auto mx-auto my-64'>
             <div>
-                <BarChart width={630} height={450} data={data}>
+                <BarChart width={430} height={450} data={data}>
                 
                 <XAxis dataKey="name" />
                     <YAxis />
