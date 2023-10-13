@@ -29,11 +29,11 @@ const Header = () => {
                     <NavLink className='m-5 text-gray-700 font-medium link' to='/about'>About Us</NavLink>
                   
                 </nav>
-                <nav className={collapseValue? 'absolute w-full top-16 justify-center flex bg-amber-300 animator': 'hidden'}>
+                <nav className={collapseValue? 'absolute w-full top-16 justify-center flex bg-amber-300 animator md:hidden': 'hidden'}>
                     <ul className="text-left bg-amber-300 py-2 w-full ms-14">
-                        <li className="mb-2"><NavLink className='m-5 text-gray-700 font-medium link' to='/home' >Ouiz</NavLink></li>
-                        <li className="mb-2"><NavLink className='m-5 text-gray-700 font-medium link' to='/quizStatistics'>Quiz Statistics</NavLink></li>
-                        <li><NavLink className='m-5 text-gray-700 font-medium link' to='/about'>About Us</NavLink></li>
+                        <li className="mb-2"><NavLink className='m-5 text-gray-700 font-medium ' to='/home' >Ouiz</NavLink></li>
+                        <li className="mb-2"><NavLink className='m-5 text-gray-700 font-medium ' to='/quizStatistics'>Quiz Statistics</NavLink></li>
+                        <li><NavLink className='m-5 text-gray-700 font-medium ' to='/about'>About Us</NavLink></li>
                     </ul>
                   
                 </nav>

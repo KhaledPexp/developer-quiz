@@ -1,9 +1,9 @@
 .active{
-    color: rgb(231, 9, 9);
-    font-weight: bolder;
+    color: rgb(231, 9, 9)!important;
+    font-weight: bolder!important;
 }
 .link:hover{
-    color: rgb(231, 9, 9);
+    color: rgb(231, 9, 9)!important;
 }
 .animator{
     animation: menu-drop 0.5s ;

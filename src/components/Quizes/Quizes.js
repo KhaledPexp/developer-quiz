@@ -16,6 +16,7 @@ const Quizes = () => {
     const [resultShow, setValue] = useState(false);
     const [totalCorrect, setResult ] = useState(0);
     
+    
     // const corAns = [];
 
     const correctAnsCheck = (correctAns, qCorrectAns) => {
@@ -33,6 +34,7 @@ const Quizes = () => {
         
       }
       else{
+        
           toast.error('Your Answer was incorrect!', {
               position: "top-center",
               autoClose: 5000,
@@ -77,7 +79,7 @@ const Quizes = () => {
                 {
                   questions.map(question => {
                     i++;
-                   return <SingleQuiz q = {question} key={question.id} no = {i} correctAnsCheck = {correctAnsCheck}></SingleQuiz>}
+                   return <SingleQuiz q = {question} key={question.id} no = {i} correctAnsCheck = {correctAnsCheck} ></SingleQuiz>}
                   
                    )  
                 }
